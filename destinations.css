@@ -1,9 +1,19 @@
+.card-container{
+  display: inline-block;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 20px;
 
+}
 .image {
   width: 100%;
   height: auto;
   margin-bottom: 20px;
+
   transition: transform .5s, filter .5s;
+  border-radius: 2%;
 
 }
 .image:hover {
