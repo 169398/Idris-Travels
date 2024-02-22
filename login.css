@@ -18,6 +18,11 @@ ul {
     padding: 0;
     text-align: center;
 }
+a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
 
 ul li {
     display: inline;
@@ -44,11 +49,6 @@ label {
     margin-bottom: 10px;
     font-weight: bold;
 }
-a {
-    color: #3498db;
-    text-decoration: none;
-    transition: color 0.3s;
-  }
 
 input, textarea {
     width: 100%;
