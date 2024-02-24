@@ -1,0 +1,79 @@
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+
+  <link rel="stylesheet" href="registration.css">
+
+
+  </head>
+  <body>
+    <h1 class="animate__animated animate__fadeIn">Register with us👇</h1>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinations.html">Destinations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="Registration.html">RegistrationForm</a></li>
+
+      
+      </ul>
+      <hr>
+  <form id="registrationForm">
+    <label for="username">Username:</label>
+    <input type="text" id="username" required><br>
+    
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" required><br>
+    
+    <label for="password">Password:</label>
+    <input type="password" id="password" required><br>
+    
+    <label for="confirmPassword">Confirm Password:</label>
+    <input type="password" id="confirmPassword" required><br>
+    
+    <a href="/"><button class="bn29">Register</button></a>
+  </form>
+  
+  <script>
+
+
+document.getElementById("registrationForm").addEventListener("submit", function(event) {
+  event.preventDefault(); 
+  var username = document.getElementById("username").value;
+  var dob = document.getElementById("dob").value;
+  var password = document.getElementById("password").value;
+  var confirmPassword = document.getElementById("confirmPassword").value;
+  
+  var usernameRegex = /^[a-zA-Z]+$/;
+  if (!usernameRegex.test(username)) {
+    alert("Username can only contain alphabetic characters");
+    return;
+  }
+  
+  if (isNaN(Date.parse(dob))) {
+    alert("Date of Birth must be a valid date");
+    return;
+  }
+  
+  var passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()_+}{":;'?/>.<,])(?=.*[^\s]).{8,}$/;
+  if (!passwordRegex.test(password)) {
+    alert("Password must contain at least one uppercase letter, one lowercase letter, one number, one special character, and be at least 8 characters long");
+    return;
+  }
+  
+  if (password !== confirmPassword) {
+    alert("Passwords do not match");
+    return;
+  }
+  
+  alert("You have successfully registered as " + username);
+});
+
+  </script>
+  
+  </body>
+  </html>
+  

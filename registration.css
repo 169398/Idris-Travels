@@ -1,40 +1,40 @@
-body {
+
+
+  body {
     font-family: 'Arial', sans-serif;
     background-color: #f5f5dc;
     color: #333;
     margin: 0;
     padding: 0;
 }
-
-h1, p {
+  h1, p {
     text-align: center;
     animation: fadeIn 1s;
     font-family: 'Roboto', sans-serif;
 
 }
-
-ul {
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
+ul{
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
 }
 a {
-    color: #3498db;
-    text-decoration: none;
-    transition: color 0.3s;
-  }
+  color: #3498db;
+  text-decoration: none;
+  transition: color 0.3s;
+}
 
 ul li {
-    display: inline;
-    margin-right: 20px;
+  display: inline;
+  margin-right: 20px;
 }
 
 hr {
-    border: 1px solid #ccc;
-    margin: 20px 0;
+  border: 1px solid #ccc;
+  margin: 20px 0;
 }
-
-form {
+  
+  form {
     max-width: 600px;
     margin: auto;
     background-color: #87ceeb;
@@ -59,9 +59,7 @@ input, textarea {
     box-sizing: border-box;
 }
 
-input[type="checkbox"] {
-    margin-top: 5px;
-}
+
 
 input[type="submit"] {
     background-color: #3498db;
@@ -71,16 +69,20 @@ input[type="submit"] {
     border-radius: 5px;
     cursor: pointer;
 }
-input[type="range"] {
-    width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    margin-bottom: 20px;
-  }
 
-input[type="submit"]:hover {
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+
+  
+  input[type="submit"]:hover {
     background-color: #207dbb;
 }
 
