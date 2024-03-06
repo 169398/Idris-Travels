@@ -152,3 +152,93 @@ filter: blur(0.3px);
 width: 115%;
 height: 115%;
 }
+
+
+.password-input-box{
+  position: relative;
+  width: 300px;
+  height: 40px;
+}
+
+.password-input{
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  border: none;
+  padding: 5px 15px;
+  outline: none;
+  border-radius: 5px;
+  color: #d34970;
+  padding-right: 45px;
+}
+
+.password-input::placeholder{
+  color: #d34970;
+}
+
+.password-input:focus{
+  box-shadow: 0 0 0 3px #d34970,
+              0 0 0 6px #4fe222;
+}
+
+.show-password{
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #92203f;
+}
+
+.password-checklist{
+  position: absolute;
+  top: calc(100% + 10px);
+  width: 100%;
+  padding: 20px 30px;
+  background: #ef547f;
+  border-radius: 5px;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(20px);
+  transition: .5s ease;
+}
+
+.password-input:focus ~ .password-checklist{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.checklist-title{
+  font-size: 15px;
+  color: #922037;
+  margin-bottom: 10px;
+}
+
+.checklist{
+  list-style: none;
+}
+
+.list-item{
+  padding-left: 30px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.list-item::before{
+  content: '\f00d';
+  font-family: FontAwesome;
+  display: inline-block;
+  margin: 8px 0;
+  margin-left: -30px;
+  width: 20px;
+  font-size: 12px;
+}
+
+.list-item.checked{
+  opacity: 0.5;
+}
+
+.list-item.checked::before{
+  content: '\f00c';
+  color: #922037;
+}
