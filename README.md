@@ -23,4 +23,4 @@ Behind the Scenes:
 
 🌟 Enjoy your travels! 🛫
 
-We hope you find inspiration and excitement as you navigate through the Travel Adventure Project. If you have any questions, feedback, or simply want to share your travel dreams, don't hesitate to get in touch. Happy adventuring! 🌍✈️
+I hope you find inspiration and excitement as you navigate through the Travel Adventure Project. If you have any questions, feedback, or simply want to share your travel dreams, don't hesitate to get in touch. Happy adventuring! 🌍✈️
