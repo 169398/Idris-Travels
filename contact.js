@@ -15,7 +15,7 @@ document.getElementById("registrationForm").addEventListener("submit", function(
   }
   
   if (isNaN(Date.parse(dob))) {
-    alert("Date of Birth must be a valid date");
+    alert("Date of Birth must be a valid date greater than 2004");
     return;
   }
   
