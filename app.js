@@ -24,6 +24,7 @@ let validationRegex = [
     {regex: /[0-9]/ }, 
     {regex: /[a-z]/ }, 
     {regex: /[A-Z]/ }, 
+    {regex:/[a-z]/},
     {regex: /[^A-Za-z0-9]/ }, 
 ]
 
